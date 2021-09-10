@@ -25,11 +25,11 @@ spec:
       default: "true"
     - name: test-file
       description: Path of the postman collection (postman/mq-spring-app.postman_collection.json)
-      default: "postman/test.json"
+      default: "postman/mq-spring-app.postman_collection.json"
   tasks:
     - name: dev-instance-tests
       taskRef:
-        name: ibm-functional-test-hp
+        name: ibm-functional-test
       params:
         - name: git-url
           value: "$(params.git-url)"
